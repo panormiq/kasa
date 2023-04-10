@@ -6,6 +6,33 @@ header {
     margin-top: 40px
   }
 nav{
+   
+   margin-top:auto ;
+   margin-bottom: auto;
     
 
   }
+a{
+    text-decoration: none;
+    /* Accueil */
+
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+
+
+
+color: #FF6060;
+
+}
+
+.active{
+    text-decoration-line: underline;
+}
+
+a +a {
+    margin-left: 57px;
+}
