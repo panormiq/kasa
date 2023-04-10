@@ -8,26 +8,22 @@ import Logement from './pages/About';
 import reportWebVitals from './reportWebVitals';
 import NotFound from './pages/NotFound';
 import Layout from './components/layout';
-import Header from './components/Header';
-import Footer from './components/Footer';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
   <React.StrictMode>
     <Router>
-      <Header />
-        <Routes>
-          
-          
-                <Route index element={<Home />} />
-                <Route path="about" element={<About />} /> 
-                <Route path="Logement" element={<Logement />} /> 
-                <Route path="*" element={<NotFound />} />
-            
-          
-        </Routes>
-      <Footer />
+      
+    <Routes>
+          <Route path="/" element={<Layout />}>   
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} /> 
+            <Route path="Logement" element={<Logement />} /> 
+
+            <Route path="*" element={<NotFound />} />
+          </Route>
+       
+    </Routes>
+   
     </Router>
   </React.StrictMode>
 );
