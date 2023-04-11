@@ -4,25 +4,27 @@ import { BrowserRouter as Router ,Routes, Route } from "react-router-dom"
 import './style/css/index.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Logement from './pages/About';
+import Logement from './pages/Logement';
 import reportWebVitals from './reportWebVitals';
 import NotFound from './pages/NotFound';
 import Layout from './components/layout';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
+ 
     <Router>
       <Header />
         <Routes>
           
-          
-                <Route index element={<Home />} />
+        const [page, updatePage] = useState([]);
+                <Route index element={<Home page={page} updatePage={updatePage} />} />
                 <Route path="about" element={<About />} /> 
-                <Route path="Logement" element={<Logement />} /> 
+                <Route path="Logement/:id" element={<Logement />} /> 
                 <Route path="*" element={<NotFound />} />
             
           

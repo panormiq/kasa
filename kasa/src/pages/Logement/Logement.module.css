@@ -1,0 +1,102 @@
+.logement{
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 43px;
+    padding-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #FF6060;
+    
+}
+.carouselle{
+    width:100%;
+    height: 415px;
+    background: no-repeat center/100%
+  
+}
+.infosGenerals{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+
+}
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+   
+    }
+    h2{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+       
+        }
+.infosLogement{
+
+}
+
+.infosProprio{
+    display: flex;
+    justify-self: end;
+
+}
+.infosProprio p{
+    margin: 0;
+}
+.civilite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 64px;
+    margin-right: 10px;
+   
+}
+.infosProprio img {
+    border-radius: 32px;
+    height: 64px;
+    width: 64px;
+}
+.tags{
+    display: flex;
+    align-items: start;
+
+}
+.tags p {
+    background-color: #FF6060;
+    color: #FFFFFF;
+    height: 25px;
+    width: 115px;
+    border-radius: 10px;
+ 
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+.tags p +p {
+    margin-left: 10px;
+}
+.infosLogementGeneral{
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+}
+.descriptionDetailler{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.infos {
+    width: 45%;
+}
+

@@ -33,6 +33,6 @@ color: #FF6060;
     text-decoration-line: underline;
 }
 
-a +a {
+nav a +a {
     margin-left: 57px;
 }

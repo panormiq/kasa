@@ -5,9 +5,7 @@ import styles from './Header.module.css';
  
 function Header() {
    
-   const pathFull =window.location.href
-   const index=pathFull.lastIndexOf("/");
-   const path =pathFull.substring(index);
+ 
     return (
       
         <header className={styles.header}>
