@@ -30,4 +30,13 @@
     margin-bottom: 30px;
     
 }
+@media (max-width: 768px) { 
+.button{
+    font-size: 13px;
+    height: 30px;
+}
+.contenu{
+    font-size: 12px;
+}
+}
 

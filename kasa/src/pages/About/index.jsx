@@ -18,9 +18,9 @@ const paragraphs=[
 
 function About() {
     return (
-        <div className={styles.logement}>
-        <div>
-           <BandeauImage className={styles.image}  image={"../../../images/IMG.png"}/>
+        <div className={styles.imgagecontenant} >
+        <div  >
+           <BandeauImage  image={"../../../images/IMG.png"}/>
         </div>
         <div  className={styles.infocontenant}>
         {paragraphs.map((paragraph) => <div key={paragraph.titre} className={styles.infos}> <Infos titre={paragraph.titre} text={[paragraph.text,]} /></div>)}

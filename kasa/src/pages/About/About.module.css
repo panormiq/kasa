@@ -5,3 +5,18 @@
     margin-top: 30px;
 
 }
+@media (max-width: 768px) {
+    .imgagecontenant{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        aspect-ratio: 336/323;
+    }
+    .infocontenant{
+        width: 100%;
+     
+     
+     }
+    
+}
