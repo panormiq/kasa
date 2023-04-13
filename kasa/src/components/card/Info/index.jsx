@@ -4,9 +4,8 @@ import { faChevronUp, faChevronDown} from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 function Info(props) {
-    console.log(props);
-    const titre = props.titre;
-    const text = props.text;
+    const {titre, text}=props;
+  
   
     console.log(text);
     

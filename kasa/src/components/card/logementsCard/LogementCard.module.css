@@ -7,4 +7,10 @@
     height: 340px ;
     width: 340px;
     border-radius: 10px;
+    display: flex;
+    align-items: end;
+  }
+  .titre{
+   margin-left: 20px;
+   color: #FFFFFF;
   }

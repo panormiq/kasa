@@ -18,18 +18,19 @@ root.render(
   <React.StrictMode>
  
     <Router>
-      <Header />
+
         <Routes>
-          
-        const [page, updatePage] = useState([]);
-                <Route index element={<Home page={page} updatePage={updatePage} />} />
-                <Route path="about" element={<About />} /> 
-                <Route path="Logement/:id" element={<Logement />} /> 
-                <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Layout />}>   
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} /> 
+            <Route path="Logement/:id" element={<Logement />} /> 
+
             
-          
+            <Route path="*" element={<NotFound />} />
+            
+          </Route>
         </Routes>
-      <Footer />
+      
     </Router>
   </React.StrictMode>
 );

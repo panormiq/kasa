@@ -12,6 +12,9 @@ nav{
     
 
   }
+.activeLink{
+    text-decoration: underline;
+}
 a{
     text-decoration: none;
     /* Accueil */
@@ -29,9 +32,7 @@ color: #FF6060;
 
 }
 
-.active{
-    text-decoration-line: underline;
-}
+
 
 nav a +a {
     margin-left: 57px;
