@@ -109,20 +109,24 @@ h2{
 @media (max-width: 768px) { 
 
     .logement{
-
+    width: 90%;
         margin-top: 25px;
     }
 
     .carouselle{
-        width: 90%;
+        width: 100%;
         height: auto;
         aspect-ratio: 325/225;
     }
     .infosGenerals{
        flex-direction: column;
+       margin-top: 15px;
     }
     h1{
         font-size: 18px;
+    }
+    h2{
+        margin-top: 5px;
     }
     .infosP{
         flex-direction: row-reverse;
@@ -145,6 +149,13 @@ h2{
         height: 32px;
     
        
+    }
+    .descriptionDetailler{
+        flex-direction: column;
+    }
+    .infos {
+        width: 100%;
+        margin-top: 16px;
     }
 
 }
