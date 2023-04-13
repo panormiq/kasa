@@ -2,7 +2,8 @@ import styles from "./Logement.module.css";
 import { useParams } from "react-router-dom";
 import Rating from "../../components/Rating";
 import Infos from "../../components/card/Info";
-import Carouselle from "../../components/Carouselle"
+import Carouselle from "../../components/Carouselle";
+import { useLocation, Navigate } from "react-router-dom";
 
 const logements=require("../../data/logements.json")
 
@@ -12,8 +13,19 @@ function Logement() {
   const logement=logements.find(logement => logement.id===logementId)
   console.log(logement)
   console.log(useParams())
+  let location = useLocation();
+  if (!logement) {
+    console.log("pas de logement");
+ 
+    return <Navigate to="/*" state={{ from: location }} replace />;
+  }
+
+
     return (
-      <div className={styles.logement}>
+
+     
+      <div className={styles.logement}> 
+     
         <div className={styles.carouselle} >
         <Carouselle logement={logement}/> 
           </div> 
@@ -54,6 +66,7 @@ function Logement() {
           
        
       </div>
+    
     )
   }
   
