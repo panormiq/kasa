@@ -14,11 +14,20 @@
     border:none;
 }
 .contenu{
-    margin-top: 30px;
-    margin-left:20px;
-    margin-right: 12px;
+    padding-top: 30px;
+    padding-left:20px;
+    padding-right: 12px;
+    margin-top: -5px;
     font-size: 18px;
     font-family: 'Montserrat';
-    height: 250px;
+   padding-bottom:19px;
+   margin-bottom: 30px;
     line-height: 142.6%;
+    background-color: #F7F7F7;
+    border-radius: 10px;
 }
+.contenant{
+    margin-bottom: 30px;
+    
+}
+

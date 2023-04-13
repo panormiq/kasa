@@ -1,7 +1,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import  style from './Rating.module.css' ;
+import  styles from './Rating.module.css' ;
 
 
 function Rating(props) {
@@ -9,9 +9,9 @@ function Rating(props) {
     const range= [1, 2, 3, 4, 5]
      
     return (
-        <div>
+        <div className={styles.contenant}>
         {range.map((rangeElem) =>
-          ratingValue >= rangeElem ?  <spam key={rangeElem.toString()}  ><FontAwesomeIcon className={style.rouge}  icon={faStar} /></spam> :  <spam key={rangeElem.toString()}  ><FontAwesomeIcon className={style.gray}  icon={faStar} /></spam>
+          ratingValue >= rangeElem ?  <div key={rangeElem.toString()}  ><FontAwesomeIcon className={styles.rouge}  icon={faStar} /></div> :  <div key={rangeElem.toString()}  ><FontAwesomeIcon className={styles.gray}  icon={faStar} /></div>
          
         )}
         </div>

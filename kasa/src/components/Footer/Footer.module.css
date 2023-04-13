@@ -1,0 +1,31 @@
+
+
+.contenant {
+    margin-top: 53px;
+    background-color: #000000;
+    height: 209px;
+    color: white;
+    display: flex;
+   flex-direction: column ;
+   align-items: center;
+   justify-content: space-between;
+    
+}
+.image{
+    width: 120px;
+    margin-top: 66px;
+  
+}
+.text{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) { 
+    .image{
+        margin-top: 62px;
+    }
+.text{
+    font-size: 12px;
+    margin-bottom: 62px;
+}
+}

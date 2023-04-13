@@ -1,6 +1,6 @@
 import styles from './home.module.css';
 import LogementCard from '../../components/card/logementsCard';
-import { useState } from 'react';
+
 
 function Home() {
   

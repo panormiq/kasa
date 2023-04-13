@@ -12,8 +12,9 @@ function Info(props) {
     console.log({titre})
     const [isOpen, setIsOpen] = useState(false)
 
-    return isOpen ? (
-        <div >
+    return (<div className={styles.contenant}> {isOpen ? 
+        <div className={styles.contenus} >
+            
             <button className={styles.button} onClick={() => setIsOpen(false)}><div>{titre}</div> <FontAwesomeIcon   icon={faChevronUp} /></button>
            
             <div className={styles.contenu}>
@@ -25,9 +26,10 @@ function Info(props) {
             </div>
             
         </div>
-    ) : (
+     : 
         <button  className={styles.button} onClick={() => setIsOpen(true)}>{titre} <FontAwesomeIcon   icon={faChevronDown} /></button>
-    )
+    
+                 } </div>)
 }
 
 export default Info

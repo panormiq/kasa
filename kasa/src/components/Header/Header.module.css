@@ -1,15 +1,16 @@
 header {
     display:  flex;
     justify-content: space-between;
-    margin-right: 100px;
-    margin-left: 100px ;
+    width: 86%;
+    margin-right: auto;
+    margin-left: auto ;
     margin-top: 40px
   }
 nav{
-   
+  
    margin-top:auto ;
    margin-bottom: auto;
-    
+    display: flex;
 
   }
 .activeLink{
@@ -17,7 +18,7 @@ nav{
 }
 a{
     text-decoration: none;
-    /* Accueil */
+    
 
 
 
@@ -37,3 +38,32 @@ color: #FF6060;
 nav a +a {
     margin-left: 57px;
 }
+
+.mobile{
+    display: none;
+   
+}
+
+@media (max-width: 768px) { 
+    header {
+    width: 90%;
+  
+    
+    }
+    .header img{
+        width:40%
+    }
+    a{
+        font-size: 12px;
+    }
+    nav a +a {
+        margin-left: 10px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: initial;
+    }
+ }
+

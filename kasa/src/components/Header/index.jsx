@@ -13,8 +13,8 @@ function Header() {
             <img src={logo} alt="Logo KASA"/>
             <nav className={styles.nav}>
              
-                <NavLink to="/"  className={({ isActive }) => isActive ? styles.activeLink : ''}> Accueil  </NavLink>
-                <NavLink to="/about" className={({ isActive }) => isActive ? styles.activeLink : ''}> A Propos</NavLink>
+                <NavLink to="/"  className={({ isActive }) => isActive ? styles.activeLink : ''}> <div className={styles.desktop}>Accueil</div><div className={styles.mobile}>ACCUEIL</div>  </NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? styles.activeLink : ''}> <div className={styles.desktop}>A Propos</div><div className={styles.mobile}>A PROPOS</div></NavLink>
             </nav>
      
         </header>

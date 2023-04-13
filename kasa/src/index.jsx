@@ -8,9 +8,7 @@ import Logement from './pages/Logement';
 import reportWebVitals from './reportWebVitals';
 import NotFound from './pages/NotFound';
 import Layout from './components/layout';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import { useState } from 'react';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

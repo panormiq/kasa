@@ -1,0 +1,21 @@
+.contenant{
+ text-align: center;
+}
+
+
+.titre{
+    font-size: 288px;
+    font-weight: bold;
+    margin-top: 170px;
+}
+.text{
+    font-size: 36px;
+    margin-top: 66px;
+
+}
+.lien{
+    font-size: 18px;
+    margin-top: 182px;
+    margin-bottom: 159px;
+    text-decoration: underline;
+}
