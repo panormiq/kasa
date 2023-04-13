@@ -12,3 +12,17 @@
 .contenant{
     display: flex;
 }
+
+@media (max-width: 768px) { 
+    .rouge{
+       
+        margin-left: 5px;
+      
+    }
+    
+    .gray{
+      
+       margin-left: 5px;
+       
+    }
+}

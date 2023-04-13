@@ -30,15 +30,13 @@ h1{
     margin: 0;
    
     }
-    h2{
+h2{
      
-        font-weight: 500;
-        font-size: 18px;
+    font-weight: 500;
+    font-size: 18px;
        
-        }
-.infosLogement{
-
 }
+
 
 .infosProprio{
     display: flex;
@@ -120,10 +118,33 @@ h1{
         height: auto;
         aspect-ratio: 325/225;
     }
-    .infosLogementGeneral{
+    .infosGenerals{
+       flex-direction: column;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .infosP{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-size: 12px;
+        align-items: center;
+    }
+    .rating{
+        margin-top: 0px;
+    }
+    .infosProprio img {
+        border-radius: 16px;
+        height: 32px;
+        width: 32px;
+        
+    }
+    .civilite{
+       
+        
+        height: 32px;
+    
        
     }
-    .h1{font-size: 18px;}
-   
 
 }
