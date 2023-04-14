@@ -80,6 +80,8 @@ border-radius: 25px;
         margin-left: auto;
         margin-right: auto;
         padding:0;
-    }
+        display: flex;
+        justify-content:space-around;
 
+}
 }
