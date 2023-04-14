@@ -1,7 +1,7 @@
 import styles from './About.module.css';
 import BandeauImage from '../../components/card/BandeauImage'
 import Infos from '../../components/card/Info'
-
+import image from '../../images/montagne.png'
 
 
 const paragraphs=[
@@ -20,7 +20,7 @@ function About() {
     return (
         <div className={styles.imgagecontenant} >
         <div  >
-           <BandeauImage  image={"../../../images/IMG.png"}/>
+           <BandeauImage  image={image}/>
         </div>
         <div  className={styles.infocontenant}>
         {paragraphs.map((paragraph) => <div key={paragraph.titre} className={styles.infos}> <Infos titre={paragraph.titre} text={[paragraph.text,]} /></div>)}

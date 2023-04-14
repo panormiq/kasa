@@ -12,10 +12,9 @@ function BandeauImage(props) {
    
     return  (
         <div>
-        <div 
-           style={{ 
-            "backgroundImage": 'url('+{image }+')', }}
-           className={styles.img} > </div>
+        <div className={styles.img}
+           
+            ><img src={image} alt="montagne" ></img> </div>
         
           </div>
     ) 
