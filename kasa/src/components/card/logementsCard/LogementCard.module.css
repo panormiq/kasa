@@ -16,15 +16,15 @@ position: relative;
 
 
 .link {
-  background: linear-gradient(180deg, rgba(255, 69, 69, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
+ 
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-size: cover;
  
   width: 100%;
 
   position: absolute;
 aspect-ratio: 1/1;
-opacity: 0.7;
+opacity: 0.9;
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
