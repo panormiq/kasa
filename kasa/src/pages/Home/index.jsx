@@ -11,7 +11,7 @@ function Home() {
       <>
         <div  className={styles.titre}>
           <div  className={styles.img}>  </div>
-          <h1 className={styles.h1}> Chez vous, partout ailleurs</h1>
+          <h1 className={styles.h1}> <p>Chez vous,&nbsp; </p><p> partout ailleurs</p></h1>
         </div>
         <div  className={styles.logement}>
          {logements.map((logement) => (  

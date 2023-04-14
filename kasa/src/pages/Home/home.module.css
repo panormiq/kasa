@@ -35,6 +35,10 @@ border-radius: 25px;
     transform: translate(0, -50%);
     color: white;
     font-size: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   
   
    
@@ -63,6 +67,13 @@ border-radius: 25px;
         left:16px;
         text-align:left;
         transform: translate(0, -50%);
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: flex-start;
+    }
+    .h1 p{
+margin-top: 0px;
+margin-bottom: 0px;
     }
     .titre{
         margin-top: 16px;
