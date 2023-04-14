@@ -21,8 +21,8 @@
     border-radius: 25px;
 }
 @media (max-width: 768px) { 
-   .imgs{ max-width: 100%;
-  
+   .img{ max-width: 100%;
+    margin-top: 20px;
    
    }
 }

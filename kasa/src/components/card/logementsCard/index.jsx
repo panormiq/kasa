@@ -6,9 +6,12 @@ function LogementCard(props) {
   console.log(logement);
     return (
         <Link  className={styles.lien} to={'/logement/' + logement.id}  >
+         
           <div className={styles.link} style={{ 
       "backgroundImage": 'url(' + logement.cover + ')', }} >
-          <p className={styles.titre}> {logement.title} </p> </div> </Link>
+        </div>
+        
+          <p className={styles.titre}> {logement.title} </p>  </Link>
        
     )
 }
