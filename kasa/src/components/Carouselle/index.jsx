@@ -14,10 +14,10 @@ function Carouselle(props) {
     return  (
         <div className={styles.img} style={{ 
             "backgroundImage": 'url(' + logement.pictures[displayPhotoNumber] + ')', }} >
-  
+                {(logement.pictures.length===1) ?"":<div className={styles.buttonContenant}>
                  <button className={styles.button} onClick={() => updatePhotoNumber(displayPhotoNumber===1 ? logement.pictures.length-1:displayPhotoNumber-1)}><div></div> <FontAwesomeIcon   icon={faChevronLeft} /></button>
-                 <button className={styles.button} onClick={() => updatePhotoNumber(displayPhotoNumber===logement.pictures.length-1 ? 0:displayPhotoNumber+1)}><div></div> <FontAwesomeIcon   icon={faChevronRight} /></button>
-                </div> 
+                 <button className={styles.button} onClick={() => updatePhotoNumber(displayPhotoNumber===logement.pictures.length-1 ? 0:displayPhotoNumber+1)}><div></div> <FontAwesomeIcon   icon={faChevronRight} /></button></div>}
+        </div> 
     ) 
 }
 
