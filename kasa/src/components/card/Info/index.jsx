@@ -7,9 +7,7 @@ function Info(props) {
     const {titre, text}=props;
   
   
-    console.log(text);
-    
-    console.log({titre})
+   
     const [isOpen, setIsOpen] = useState(false)
 
     return (<div className={styles.contenant}> {isOpen ? 
